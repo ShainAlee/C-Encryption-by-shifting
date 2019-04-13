@@ -33,7 +33,11 @@ string encrypt(string s,int d) // function
 		}
 		for (int y = 0; y <= alp.length() - 1; ++y) //sub loop to check individual string char in alp
 		{
-			if (s[x] == alp[y]) //checking whether each alp char is same as input string char
+			if (y + d > 25)
+			{
+				out = out + alp[(y + d)-26]; //if incrementing position goes beyond 25 substract it with 25
+			}
+			else 
 			{
 				out = out + alp[y + d]; //if same incrementing the char position of the alp value by required shift value
 			}
