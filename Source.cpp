@@ -19,7 +19,7 @@ int main(){
 }
 string encrypt(string s,int d) // function
 {
-	string alp = "ABCDEFGHIJKLMNOPQRSTUVWXY"; //alphabat string
+	string alp = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //alphabat string
 	string num = "0123456789"; //number string
 	string out=""; //output string
 	for (int x = 0; x <= s.length()-1; ++x) //main loop to check individual string value in the input
