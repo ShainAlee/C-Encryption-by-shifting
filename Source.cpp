@@ -35,7 +35,7 @@ string encrypt(string s,int d) // function
 		{
 			if (y + d > 25)
 			{
-				out = out + alp[(y + d)-26]; //if incrementing position goes beyond 25 substract it with 25
+				out = out + alp[(y + d)-26]; //if incrementing position goes beyond 25 substract it with 26 (0 will be counted)
 			}
 			else 
 			{
