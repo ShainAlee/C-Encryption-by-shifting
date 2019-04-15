@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void findNoteandCoins(int s);
+void findNoteandCoins(int s); 
 int main()
 {
 	int salary;
@@ -25,19 +25,19 @@ void findNoteandCoins(int s)
 	money[7] = 5;
 	money[8] = 2;
 	money[9] = 1;
-	int balance = s;
+	int balance = s;//there is actually no use of creating this variable...You can just execute with s variable
 
 	int type[10] = {0};//initailizing all array elements with 0
 
-	for (int x = 0; x <= 9; ++x)
+	for (int x = 0; x <= 9; ++x)//loop to go through the money[] elements
 	{
-			while (balance-money[x] >= 0)
+			while (balance-money[x] >= 0)//if substraction of balance and money is greater then 0 the loop will execute
 			{
-				balance = balance - money[x];
-				type[x] += 1;
+				balance = balance - money[x];//substratcting money from balance
+				type[x] += 1; //incrementing type by x element
 			}
 	}
-	for (int out = 0; out <= 9; ++out)
+	for (int out = 0; out <= 9; ++out)//fancy output loop
 	{
 		if (out < 6)
 		{
