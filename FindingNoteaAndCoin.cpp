@@ -35,6 +35,7 @@ void findNoteandCoins(int s)
 			{
 				balance = balance - money[0];
 				type[0] += 1;
+			}
 	}
 	for (int out = 0; out <= 9; ++out)
 	{
